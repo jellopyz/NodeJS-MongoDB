@@ -1,14 +1,13 @@
 
-var app = require('express')();
-var bodyParser = require('body-parser');
+const app = require('express')();
+const bodyParser = require('body-parser')
+
+const customerController = require('./controllers/customerController')
 
 
-var port = process.env.PORT || 7777;
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-app.get('/', function (req, res){
-    res.send('Hello')
-});
+app.use('/api/customer', customerController)
 
-app.listen(port, function() {
-    console.log('Start NodeJS on Port: ' + port);
-});
+module.exports = app
