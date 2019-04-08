@@ -2,7 +2,7 @@
   "name": "backed-training",
   "version": "0.0.1",
   "description": "Backend Training with NodeJS & MongoDB",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/nailtail/NodeJS-MongoDB#readme",
   "dependencies": {
+    "bcrypt": "^3.0.5",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.22",
+    "nodemon": "^1.18.10"
   }
 }

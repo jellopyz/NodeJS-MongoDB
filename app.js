@@ -2,12 +2,12 @@
 const app = require('express')();
 const bodyParser = require('body-parser')
 
-const customerController = require('./controllers/customerController')
+const customerRoute = require('./routes/customerRoute')
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use('/api/customer', customerController)
+app.use('/api/customer', customerRoute)
 
 module.exports = app
