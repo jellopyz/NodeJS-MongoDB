@@ -1,5 +1,8 @@
 # Don't track these folders
+node_modules/
 
+# For local / IDE
+.idea/
 
 # OS generated files #
 ######################
